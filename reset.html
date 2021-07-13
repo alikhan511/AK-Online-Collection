@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css_files/stylish1.css">
+		<script language="JavaScript" type="text/javaScript">
+			function letternumber(event)
+			{
+				var keychar;
+				keychar = event.key;
+				// alphas and numbers
+				if (((".+-0123456789").indexOf(keychar) > -1))
+				return true;
+				else
+				return false;
+			}
+		</script>
+</head>
+<body>
+	<div class="loginbox2">
+		<img src="Login.png" class="avatar">
+		<h1>Reset Password</h1>
+		<form method="POST" action="Reset">
+			<p>Mobile Number</p>
+			<input name="contact" placeholder="Enter Mobile Number" class="form-control" type="text" required onkeypress="return letternumber(event)"/>
+			<div class="radioclass">
+				<b>Role: </b> &nbsp&nbsp<input type="radio" id="radio1" name="role" value="admin" required>
+				<b><label for="radio1">Admin&nbsp&nbsp</label></b>
+				<input type="radio" id="radio2" name="role" value="customer" required>
+				<b><label for="radio2">Customer</label></b>
+			</div>
+			<input type="submit" name="reset" value="Send Code">
+		</form>	
+	</div>
+</body>
+</html>

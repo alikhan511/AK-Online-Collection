@@ -1,0 +1,27 @@
+.leftside, .rightside{
+	height: 814px;
+	width: 100%;
+	border: 2px solid grey;
+	margin: 0 auto;
+}
+
+.leftside{
+	background: white;
+}
+
+.rightside{
+	background: white;
+}
+h3{
+	color: blue;
+}	
+h1{
+	color:red;
+}
+li{
+	color: brown;
+}
+
+h2{
+	color: purple;
+}

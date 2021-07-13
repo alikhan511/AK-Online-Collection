@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css_files/stylish.css">
+</head>
+<body>
+	<div class="loginbox1">
+		<img src="Login.png" class="avatar">
+		<h1>Login Here</h1>
+		<form method="POST" action="Login">
+			<p>User Name</p>
+			<input name="username" placeholder="Username" class="form-control"  type="text" required/>
+			<p>Password</p>
+			<input name="password" placeholder="Password" class="form-control" type="password" required max="8"/>
+			<div class="radioclass">
+				<b>Role: </b> &nbsp&nbsp<input type="radio" id="radio1" name="role" value="admin" required>
+				<b><label for="radio1">Admin&nbsp&nbsp</label></b>
+				<input type="radio" id="radio2" name="role" value="customer" required>
+				<b><label for="radio2">Customer</label></b>
+			</div>	
+			
+			<input type="submit" name="login" value="Log In" required>
+			
+			<a href="reset.html">Forget Your password</a><br>
+			<a href="signup.html">Don't have an account</a>
+		</form>	
+	</div>
+</body>
+</html>

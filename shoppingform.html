@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Form</title>
+	<link rel="stylesheet" type="text/css" href="css_files/stylish.css">
+	<script language="JavaScript" type="text/javaScript">
+
+		function letternumber(event)
+		{
+			var keychar;
+			keychar = event.key;
+			// alphas and numbers
+			if (((".+-0123456789").indexOf(keychar) > -1))
+			return true;
+			else
+			return false;
+		}
+		function ValidateAlpha(evt)
+		{
+			var keyCode = (evt.which) ? evt.which : evt.keyCode
+			if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)
+			{	
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div class="loginbox">
+		<img src="Login.png" class="avatar">
+		<h1>Shopping Form</h1>
+		<form method="POST" name="employer" action="ShoppingForm" onsubmit="return validate()">
+			<input name="fname" placeholder="Enter First Name" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input name="lname" placeholder="Enter Last Name" class="form-control"  type="text" onkeypress="return ValidateAlpha(event)"/>
+			<input name="email" placeholder="Enter Email                          abcxyz@gmail.com" class="form-control"  type="text" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+			<input name="contact" placeholder="Enter Mobile Number" class="form-control" type="text" required onkeypress="return letternumber(event)"/>
+			<input name="address" placeholder="Enter Address" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input name="city" placeholder="Enter City" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input name="tehsil" placeholder="Enter Tehsil" class="form-control"  type="text" required />
+			<input name="country" placeholder="Enter Country" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input type="submit" name="save" value="Save">
+		</form>	
+	</div>
+</body>
+</html>

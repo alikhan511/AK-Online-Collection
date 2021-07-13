@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(pic.png);
+	background-size: cover;
+	font-family: sans-serif; 
+}
+
+.loginbox2{
+	width: 350px;
+	height: 290px;
+	color: #fff;
+	background: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.loginbox2 input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.loginbox2 input[type="submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+.loginbox2 input[type="text"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px; 
+}
+
+.loginbox2 p{
+	margin:0;
+	padding: 0;
+	font-weight: bold; 
+}
+
+.loginbox2 input{
+	width: 100%;
+	margin-bottom: 20px; 
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.radioclass input[type="radio"]{
+	width: 15px
+}
+.radioclass label{
+	display: inline;
+	margin-left: 5px;
+}

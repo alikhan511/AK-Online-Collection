@@ -1,0 +1,85 @@
+.items1
+{
+	width: 264px;
+	height: 451px;
+	border: 2px solid grey;
+	margin: 0 auto;
+
+}
+
+.display-inline
+{ 
+	display: flex;
+  flex-direction:row
+}
+
+.items1 h6{
+	margin:0;
+	padding: 0;
+	font-weight: bold; 
+}
+
+.items1 input{
+	width: 100%;
+	color: black;
+}
+
+.items1 input[type="text"]{
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 40px;
+	font-size: 16px; 
+}
+
+.items1 input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 15px;
+	border-top: 50px;
+}
+
+.items1 input[type="submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color: blue;
+}
+
+.price {
+	color:blue;
+	font-weight: bold;
+	font-size: 20px
+}
+
+.shopping-form button{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 290px;
+	position: absolute;
+	background: #ffc107;
+	color: #fff;
+	font-size: 24px;
+	margin-left:410px;
+	border-radius: 20px
+}
+
+.shopping-form button:hover{
+	cursor: pointer;
+	background: #fb2525;
+	color: blue;
+}
+
+.shopping-form a:hover{
+	color: white;
+}
+
+.shopping-form a{
+	text-decoration: none;
+	font-size: 24px;
+	line-height: 20px;
+	color: black;	
+}

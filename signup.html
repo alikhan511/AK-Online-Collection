@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Form</title>
+	<link rel="stylesheet" type="text/css" href="css_files/stylish.css">
+	<script language="JavaScript" type="text/javaScript">
+
+		function validate()
+		{	
+			if(document.employer.password.value!=document.employer.confirm_password.value)	
+			{
+				error = document.getElementById("confirm_password")
+				error.innerHTML="Password doesn't match"
+				error.style.color="red"
+				document.employer.confirm_password.focus();
+				return false;
+			}   
+			else(document.employer.password.value==document.employer.confirm_password.value)	
+			{
+				error = document.getElementById("confirm_password")
+				error.innerHTML=""
+				return true;
+			}   
+			return true;
+		}
+		function letternumber(event)
+		{
+			var keychar;
+			keychar = event.key;
+			// alphas and numbers
+			if (((".+-0123456789").indexOf(keychar) > -1))
+			return true;
+			else
+			return false;
+		}
+		function ValidateAlpha(evt)
+		{
+			var keyCode = (evt.which) ? evt.which : evt.keyCode
+			if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)
+			{	
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div class="loginbox">
+		<img src="Login.png" class="avatar">
+		<h1>Signup Here</h1>
+		<form method="POST" name="employer" action="Signup" onsubmit="return validate()">
+			<input name="fname" placeholder="Enter First Name" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input name="lname" placeholder="Enter Last Name" class="form-control"  type="text" required onkeypress="return ValidateAlpha(event)"/>
+			<input name="username" placeholder="Enter Username" class="form-control"  type="text" required/>
+			<input name="email" placeholder="Enter Email                          abcxyz@gmail.com" class="form-control"  type="text" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+			<input name="contact" placeholder="Enter Mobile Number" class="form-control" type="text" required onkeypress="return letternumber(event)"/>
+			<input name="password" placeholder="Enter Password" class="form-control" type="password" required max="8"/>
+			<input name="confirm_password" placeholder="Retype Password" class="form-control" onfocusout="return validate()" type="password" required/>
+			<div><p id="confirm_password"></p></div>
+			<div class="radioclass">
+				<b>Role: </b> &nbsp&nbsp<input type="radio" id="radio1" name="role" value="admin" required>
+				<b><label for="radio1">Admin&nbsp&nbsp</label></b>
+				<input type="radio" id="radio2" name="role" value="customer" required>
+				<b><label for="radio2">Customer</label></b>
+			</div>
+			<input type="submit" name="signup" value="Sign Up">
+			<a href="index.html">Already have an account</a>
+		</form>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<servlet>
+		<servlet-name>Signup</servlet-name>
+		<servlet-class>Signup</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Signup</servlet-name>
+		<url-pattern>/Signup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>NewPassword</servlet-name>
+		<servlet-class>NewPassword</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NewPassword</servlet-name>
+		<url-pattern>/NewPassword</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>Reset</servlet-name>
+		<servlet-class>Reset</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reset</servlet-name>
+		<url-pattern>/Reset</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Shopping</servlet-name>
+		<servlet-class>Shopping</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Shopping</servlet-name>
+		<url-pattern>/Shopping</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>Logout</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Subscribe</servlet-name>
+		<servlet-class>Subscribe</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Subscribe</servlet-name>
+		<url-pattern>/Subscribe</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ContactUs</servlet-name>
+		<servlet-class>ContactUs</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContactUs</servlet-name>
+		<url-pattern>/ContactUs</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>InsertProducts</servlet-name>
+		<servlet-class>InsertProducts</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertProducts</servlet-name>
+		<url-pattern>/InsertProducts</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>DeleteProducts</servlet-name>
+		<servlet-class>DeleteProducts</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteProducts</servlet-name>
+		<url-pattern>/DeleteProducts</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteAccount</servlet-name>
+		<servlet-class>DeleteAccount</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteAccount</servlet-name>
+		<url-pattern>/DeleteAccount</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ShoppingForm</servlet-name>
+		<servlet-class>ShoppingForm</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShoppingForm</servlet-name>
+		<url-pattern>/ShoppingForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateFormServlet</servlet-name>
+		<servlet-class>UpdateFormServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateFormServlet</servlet-name>
+		<url-pattern>/UpdateFormServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateRecord</servlet-name>
+		<servlet-class>UpdateRecord</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateRecord</servlet-name>
+		<url-pattern>/UpdateRecord</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserBean</servlet-name>
+		<servlet-class>UserBean</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserBean</servlet-name>
+		<url-pattern>/UserBean</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
